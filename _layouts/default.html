@@ -9,6 +9,16 @@
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d0cb2e8bb3c3236c69b720e2d3498bc7";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
   </head>
   <body>
     <section class="page-header">
@@ -18,8 +28,16 @@
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
       {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+        <a href="../" class="btn">首页</a>
+        <a href="../reverse/reverse" class="btn">逆向工程</a>
+        <a href="../pwn/pwn" class="btn">PWN</a>
+        <a href="../crypto/crypto" class="btn">密码学</a>
+        <a href="../stega/stega" class="btn">隐写术</a>
+        <a href="../web/web" class="btn">WEB</a>
+        <a href="../ppc/ppc" class="btn">编程</a>
+        <a href="../misc/misc" class="btn">MISC</a>
+        <a href="../tools/tools" class="btn">工具使用</a>
+        <a href="../system/system" class="btn">操作系统</a>
       {% endif %}
     </section>
 
