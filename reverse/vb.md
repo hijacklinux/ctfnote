@@ -2,7 +2,7 @@
 layout: default
 ---
 # ![](../img/hj.jpg)逆向工程-PC逆向-VB
-## ![](../img/hj.jpg)VB破解关键
+## ![](../img/github1.png)VB破解关键
 ### 针对变量
 ```
 __vbaVarTstEq 常用
@@ -23,7 +23,7 @@ __vbaStrLike
 __vbaStrTextComp
 __vbaStrTextLike
 ```
-## ![](../img/hj.jpg)《VB P-code的调试方法总结》
+## ![](../img/github2.png)《VB P-code的调试方法总结》
 >这篇文章是我曾经在看雪论坛发布的，这次弄了网站，也放上来吧
 
 P-code伪编码，用od太麻烦，需用到WKTVBDebugger

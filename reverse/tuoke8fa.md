@@ -22,7 +22,7 @@ layout: default
 
 #### 首先我们先用DIE来查一下带壳程序是什么语言编写的，然后再用OD载入。
 #### 在脱壳之前呢，我们一定要知道各个语言的OEP特征是什么，免得到时候就算到了OEP，自己都不知道，那可就悲剧了，这里列出各个语言的OEP（请忽略地址）：
-#### VC++入口
+#### ![](../img/github3.png)VC++入口
 ```
 00496EB8 >/$  55            PUSH EBP
 00496EB9  |.  8BEC          MOV EBP,ESP
@@ -34,7 +34,7 @@ layout: default
 00496ECE  |.  64:8925 00000>MOV DWORD PTR FS:[0],ESP
 00496ED5  |.  83EC 58       SUB ESP,58
 ```
-#### VB入口
+#### ![](../img/github4.png)VB入口
 ```
 
 00401166  - FF25 6C104000   JMP DWORD PTR DS:[<&MSVBVM60.#100>]      ; MSVBVM60.ThunRTMain
@@ -53,7 +53,7 @@ layout: default
 00401FCC    3000               xor byte ptr ds:[eax],al
 00401FCE    0000               add byte ptr ds:[eax],al
 ```
-#### BC++入口
+#### ![](../img/github5.png)BC++入口
 ```
 0040163C > $ /EB 10         JMP SHORT BCLOCK.0040164E
 0040163E     |66            DB 66                                    ;  CHAR 'f'
@@ -77,7 +77,7 @@ layout: default
 0040165E   .  E8 DFBC0E00   CALL <JMP.&KERNEL32.GetModuleHandleA>    ; \GetModuleHandleA
 00401663   .  8BD0          MOV EDX,EAX
 ```
-#### Delphi入口
+#### ![](../img/github6.png)Delphi入口
 ```
 00509CB0 > $  55            PUSH EBP
 00509CB1   .  8BEC          MOV EBP,ESP
@@ -90,7 +90,7 @@ layout: default
 00509CBE   .  B8 20975000   MOV EAX,unpack.00509720
 00509CC3   .  E8 84CCEFFF   CALL unpack.0040694C
 ```
-#### 易语言入口
+#### ![](../img/github7.png)易语言入口
 ```
 
 格式一：
@@ -144,7 +144,7 @@ layout: default
 0045C184  |.  6A 01         push 0x1
 0045C186  |.  E8 354B0000   call notebook.00460CC0
 ```
-#### MASM32 / TASM32入口
+#### ![](../img/github8.png)MASM32 / TASM32入口
 ```
 00401258 >/$  6A 00         push 0                                   ; /pModule = NULL
 0040125A  |.  E8 47000000   call <jmp.&kernel32.GetModuleHandleA>    ; \GetModuleHandleA
@@ -156,7 +156,7 @@ layout: default
 0040126F  |.  FF35 00304000 push dword ptr ds:[403000]               ; |hInst = NULL
 00401275  |.  E8 56000000   call <jmp.&user32.DialogBoxParamA>       ; \DialogBoxParamA
 ```
-#### VC8入口
+#### ![](../img/github9.png)VC8入口
 ```
 00401258 >/$  6A 00         push 0                                   ; /pModule = NULL
 0040125A  |.  E8 47000000   call <jmp.&kernel32.GetModuleHandleA>    ; \GetModuleHandleA
@@ -169,7 +169,7 @@ layout: default
 00401275  |.  E8 56000000   call <jmp.&user32.DialogBoxParamA>       ; \DialogBoxParamA
 ```
 ### ![](../img/hj.jpg)正题——脱壳方法
-#### 脱壳方法一：单步跟踪，其实就是f8,f7配合啦
+#### ![](../img/github10.png)脱壳方法一：单步跟踪，其实就是f8,f7配合啦
 >小贱提示：需要注意的几点：当你遇到近Call的时候需要用f7跟进；当你遇到远Call的时候，用f8跳过就行；当遇到循环的时候，直接用f4跳出；当遇到大的跳转就要注意了，很快就到OEP了
 >
 >我们拿《加密与解密》的RebPE.exe举栗子，die查VC++写的，来看看吧
@@ -222,7 +222,7 @@ layout: default
 0040113A  |.  68 FC1D4000   push RebPE.00401DFC                      ;  SE 处理程序安装
 0040113F  |.  64:A1 0000000>mov eax,dword ptr fs:[0]
 ```
-#### 脱壳方法二：最后一次异常法
+#### ![](../img/github11.png)脱壳方法二：最后一次异常法
 ```
 1、在od的调试选项把异常的那个对话框所有异常的勾选全部去掉，ctrl+f2重新载入
 2、反复按shift+f9,记录你按下的次数n
@@ -230,14 +230,14 @@ layout: default
 4、看堆栈，有个se处理程序，反汇编跟随
 5、单步跟踪，直到有大跳转
 ```
-#### 脱壳方法三：两次断点法（内存镜像法）——外壳会先解压各个区段，然后再跳回代码段执行，根据这个原理
+#### ![](../img/github12.png)脱壳方法三：两次断点法（内存镜像法）——外壳会先解压各个区段，然后再跳回代码段执行，根据这个原理
 ```
 1、在od的调试选项把异常的那个对话框所有异常的勾选全部选中
 2、alt+m查看内存，然后再在资源段下一次f2断点，f9断下（目的是断下后确定壳解压处理了text段）
 3、接下来再在text段下一次f2断点，f9断下（此时就说明开始访问text段了）
 4、单步跟踪，直到大跳转
 ```
-#### 脱壳方法四：ESP定律——外壳在开始的时候一定要保存环境（例如pushad）,结束的时候还原环境（例如popad），最重要的是堆栈一定要平衡，这样，当执行pushad后，我们就可以在ESP下断点
+#### ![](../img/github13.png)脱壳方法四：ESP定律——外壳在开始的时候一定要保存环境（例如pushad）,结束的时候还原环境（例如popad），最重要的是堆栈一定要平衡，这样，当执行pushad后，我们就可以在ESP下断点
 ```
 
 EAX 00000000                                              ；这是执行pushad后各个寄存器的值
@@ -264,12 +264,12 @@ EIP 00413001 RebPE.00413001
 0040113F    64:A1 00000000  mov eax,dword ptr fs:[0]
 00401145    50              push eax
 ```
-#### 脱壳方法五：直接搜索popad法
+#### ![](../img/github14.png)脱壳方法五：直接搜索popad法
 ```
 这方法原理特别简单，既然popad是还原环境，那么直接搜索ctrl+f搜索popad，然后下f2断点，运行断下就好了。
 当然，这种方法有很大的局限性，只适合UPX，ASPACK等少量壳。
 ```
-#### 脱壳方法六：模拟跟踪法
+#### ![](../img/github15.png)脱壳方法六：模拟跟踪法
 ```
 tc的意思：Trace in till condition 跟踪进入直到条件满足
 eip是当前指令指针
@@ -288,7 +288,7 @@ alt+m去看下内存，里面在程序领空会有一个sfx 输入表，像这�
 ================================================================================================
 之后我们在command命令行插件中输入tc eip<00413000 回车，看到左上角状态变成了‘跟踪’，接下来就是等程序自动跳到OEP了
 ```
-#### 脱壳方法七：sfx法，这方法就是太慢了
+#### ![](../img/github16.png)脱壳方法七：sfx法，这方法就是太慢了
 ```
 
 1、在od的调试选项把异常的那个对话框所有异常的勾选全部选中
@@ -302,7 +302,7 @@ alt+m去看下内存，里面在程序领空会有一个sfx 输入表，像这�
 0040113A  |.  68 FC1D4000   push RebPE.00401DFC                      ;  SE 处理程序安装
 0040113F  |.  64:A1 0000000>mov eax,dword ptr fs:[0]
 ```
-#### 脱壳方法八：一步到达法
+#### ![](../img/github17.png)脱壳方法八：一步到达法
 ```
 
 1、od载入后运行

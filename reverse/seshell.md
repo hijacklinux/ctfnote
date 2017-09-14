@@ -5,7 +5,7 @@ layout: default
 >小贱提示： 如果是次数或者时间等这种限制，跟踪注册表，然后删除对应注册表即可
 
 ## SE壳如何patch
-### 准备数据
+### ![](../img/github24.png)准备数据
 ```
 jmp_addr (源码按jmp机器码为5，根据情况修改机器码长度）
 se_offset=sn_addr-sbv_addr
@@ -17,12 +17,12 @@ bp RegCreateKeyExA之前可以先ctrl g，ZwCreateFile，下断，反复运行�
 直到堆栈advapi32.dll出现（让它模拟完advapi32），取消断点，ctrl g，RegCreateKeyExA,
 从段首复制几行二进制，去m里找到模拟api的位置，反汇编跟随去这个位置，retn处下断，或者直接bp也行。
 ```
-### 找正版数据
+### ![](../img/github25.png)找正版数据
 ```
 se壳查看版本：载入od后跟随两次jmp，ctrl a，注释栏就有版本了
 然后需要找到机器码位置，将本机的机器码替换成正版机器码
 ```
-### 找sn_addr和jmp_addr和sbv_addr
+### ![](../img/github26.png)找sn_addr和jmp_addr和sbv_addr
 ```
 查找patch位置:ctrl b,RegQueryValueExA，ctrl l，
 有个ascii 0（有的od不分析，那也直接跟随下面的跳转），从这开始往下找的第一个跳转，跟随，
@@ -32,7 +32,7 @@ se壳查看版本：载入od后跟随两次jmp，ctrl a，注释栏就有版本�
 数据跟随并记下sbv_addr，这个字符串是帮助我们确定机器码位置的.f8单步，出retn，
 下面第一个跳转下断，两次f9断下，发现数据窗口数据改变了，里面就有机器码（租实开头）记下sn_addr。
 ```
-### 找se_call_addr
+### ![](../img/github27.png)找se_call_addr
 ```
 虽然找到位置了，但是时机不对，已经判断完了，需要记录机器码地址，重载，
 数据窗口定位机器码地址，f9，在第一个断点断下，

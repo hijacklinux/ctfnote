@@ -10,7 +10,7 @@ layout: default
 >
 >适合破解实战，但不适合学习,因为这种方法无脑
 
-## ![](../img/hj.jpg)针对金盾的特征码
+## ![](../img/github2.png)针对金盾的特征码
   - 连接密码等密钥
     ```
     8BE55DC3558BEC81EC34000000C745FC00000000C745F800000000C745F400000000
@@ -60,7 +60,7 @@ layout: default
     以上3个都要处理
     ```
 
-## ![](../img/hj.jpg)可可网络验证特征码
+## ![](../img/github3.png)可可网络验证特征码
   - 通用方法
     ```
     eno,下面cmp ss[],0x0改成1,之后补码
@@ -106,7 +106,7 @@ layout: default
 
     段首mov eax，0 ；retn 4或8
     ```
-## ![](../img/hj.jpg)易游网络验证特征码
+## ![](../img/github3.png)易游网络验证特征码
   - 易游特征码
     ```
     userlogin checkuserStatus  段首 mov eax,1 retn xx

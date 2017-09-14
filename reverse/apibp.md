@@ -7,14 +7,14 @@ layout: default
 >对于这些API函数，并不需要背，等到需要的时候来查一下就好
 
 
-## ![](../img/hj.jpg)限制程序功能的函数，按钮变灰啦，不能点击啦这种的
+## ![](../img/github1.png)限制程序功能的函数，按钮变灰啦，不能点击啦这种的
 
 | API            | 作用                                                   |
 | -------------- | ------------------------------------------------------ |
 | EnableMenuItem | 菜单变灰或禁止                                         |
 | EnableWindow   | 允许或禁止鼠标和键盘控制指定窗口和条目(禁止时菜单变灰) |
 
-## ![](../img/hj.jpg)对话框函数
+## ![](../img/github2.png)对话框函数
 ### 提到这里，就顺便说下什么是非模态对话框，什么是模态对话框吧
 （PS：主要目的是秀一下我高超的绘画功底，哈哈）
 
@@ -45,7 +45,7 @@ layout: default
 | GetDlgItemTextA           | 得指定输入框输入字符串                                                               |
 | Hmemcpy                   | 内存复制  非应用程序直接调用，就是万能断点啦，只有XP能用，不过大家应该都有XP虚拟机吧 |
 
-## ![](../img/hj.jpg)磁盘处理函数
+## ![](../img/github4.png)磁盘处理函数
 
 | API                   | 作用                                                  |
 | --------------------- | ----------------------------------------------------- |
@@ -59,7 +59,7 @@ layout: default
 | GetSystemDirectoryA   | 取得 Windows 系统目录 即 System目录的完整路径名       |
 |                       |                                                       |
 
-## ![](../img/hj.jpg)文件处理函数
+## ![](../img/github5.png)文件处理函数
 
 
 | API                  | 作用                                                              |
@@ -105,7 +105,7 @@ layout: default
 | GetFileTime          | 取得指定文件的时间信息                                            |
 | GetFileType          | 在给出文件句柄的前提下 判断文件类型                               |
 
-## ![](../img/hj.jpg)注册表处理函数
+## ![](../img/github6.png)注册表处理函数
 
 
 | API              | 作用                             |
@@ -122,7 +122,7 @@ layout: default
 | RegSetValueExA   | 设置指定项的值                   |
 | RegCloseKey      | 关闭系统注册表中的一个项或键    |
 
-## ![](../img/hj.jpg)时间处理函数
+## ![](../img/github7.png)时间处理函数
 
 
 | API             | 作用                         |
@@ -136,7 +136,7 @@ layout: default
 | SetLocalTime    | 设置本地时间                 |
 | SetSystemTime   | 设置系统时间                 |
 
-## ![](../img/hj.jpg)进程函数
+## ![](../img/github8.png)进程函数
 
 
 | API                 | 作用                                                    |

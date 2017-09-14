@@ -2,8 +2,8 @@
 layout: default
 ---
 # ![](../img/hj.jpg)逆向工程-Unix
-## Unix
-### 常用命令
+## gdb
+### ![](../img/github18.png)常用命令
 
 | 命令            | 描述                                                               |
 |:-------------|:------------------|
@@ -24,7 +24,7 @@ layout: default
 |    quit             |                          退出 gdb                                          |
 
 
-### 用gdb反汇编
+### ![](../img/github24.png)用gdb反汇编
 ```
 要用 gdb 反汇编，可使用下述两个命令：
 set disassembly-flavor <intel/att>
