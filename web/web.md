@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Welcome to another page
+## 过几天再写
 
 _yay_
 
