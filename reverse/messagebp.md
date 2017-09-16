@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# ![](../img/hj.jpg)逆向工程-PC逆向-消息断点和条件断点
+# ![](../img/hj.jpg)消息断点和条件断点
 
 ## ![](../img/github18.png)消息断点
 ### 总体思路方法

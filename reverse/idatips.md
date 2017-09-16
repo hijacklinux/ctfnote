@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# ![](../img/hj.jpg)逆向工程-PC逆向-IDA PRO中的小tips
+# ![](../img/hj.jpg)IDA PRO中的小tips
 >小贱提示： 就是一些快捷键啦，修改代码的插件啦，支持中文啦
 
 ## ![](../img/github4.png)修改代码保存插件keypatch.py

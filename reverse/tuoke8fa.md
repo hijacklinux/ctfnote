@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# ![](../img/hj.jpg)逆向工程-PC逆向-C,C++,mfc,delphi,易语言-OD
+# ![](../img/hj.jpg)PC逆向-C,C++,mfc,delphi,易语言-OD
 ## 《关于徒手脱壳的几种方法》
 >这篇文章是我曾经在看雪论坛发布的，这次弄了网站，也放上来吧,当然方法是各路大牛前辈发明的
 

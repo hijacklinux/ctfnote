@@ -36,4 +36,14 @@ layout: default
       - ![](../img/yes.png)[获得函数的调用](getapi)
       - ![](../img/yes.png)[代码重定位](reloc)
       - ![](../img/yes.png)[消息循环](wndproc)
-    - 代码的插入与删除技术
+  - ![](../img/yes.png) .NET程序的逆向
+    - ![](../img/yes.png) [编译及token](netbianyi)
+    - ![](../img/yes.png) [结构](netjiegou)
+    - ![](../img/yes.png) IL代码
+      - ![](../img/yes.png)[.NET流程控制指令](ilkongzhiliu)
+      - ![](../img/yes.png)[.NET算数指令及方法调用指令](ilsuanshu)
+      - ![](../img/yes.png)[.NET参数，局部变量，字段寻址指令](ilcanshu)
+      - ![](../img/yes.png)[.NET类与值类型操作指令]
+      - ![](../img/yes.png)[.NET向量操作指令]
+    - ![](../img/yes.png)[.NET反汇编调试]
+    - ![](../img/yes.png)[.NET反保护]

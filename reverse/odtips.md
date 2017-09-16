@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# ![](../img/hj.jpg)逆向工程-PC逆向-OD调试的注意事项
+# ![](../img/hj.jpg)OD调试的注意事项
 
 ### ![](../img/github1.png)关键call多次被调用
 ```

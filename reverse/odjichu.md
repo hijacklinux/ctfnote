@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# ![](../img/hj.jpg)逆向工程-PC逆向-很基础的东西
+# ![](../img/hj.jpg)PC逆向-很基础的东西
 >小贱提示： 如果没忘的话，这篇文章没必要看
 ## ![](../img/github21.png)OD 快捷键
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# ![](../img/hj.jpg)逆向工程-PC逆向-java
+# ![](../img/hj.jpg)PC逆向-java
 >java反编译类似.NET,都是通过中间语言
 
 ## ![](../img/github12.png)工具

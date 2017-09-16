@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# ![](../img/hj.jpg)逆向工程-PC逆向-代码重定位
+# ![](../img/hj.jpg)代码重定位
 >小贱提示： EXE可以不管，但是修补DLL的时候，必须代码重定位
 
 ## ![](../img/github12.png)基址重定位信息
