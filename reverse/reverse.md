@@ -4,6 +4,9 @@ layout: default
 
 # 欢迎来到逆向工程的世界
 ### ![](../img/hj.jpg) 以下为小贱所掌握的逆向工程技能树
+>小贱提示：
+>
+>这些只是基础部分，深入部分就不是笔记这么简单了，需要大量实践总结经验，还需读者日后自行研究
 
 - ![](../img/github1.png)[基础知识](jichuzhishi)
   - ![](../img/yes.png) 调用约定
@@ -43,7 +46,12 @@ layout: default
       - ![](../img/yes.png)[.NET流程控制指令](ilkongzhiliu)
       - ![](../img/yes.png)[.NET算数指令及方法调用指令](ilsuanshu)
       - ![](../img/yes.png)[.NET参数，局部变量，字段寻址指令](ilcanshu)
-      - ![](../img/yes.png)[.NET类与值类型操作指令]
-      - ![](../img/yes.png)[.NET向量操作指令]
-    - ![](../img/yes.png)[.NET反汇编调试]
-    - ![](../img/yes.png)[.NET反保护]
+      - ![](../img/yes.png)[.NET类与值类型操作指令](illei)
+      - ![](../img/yes.png)[.NET向量操作指令](ilxiangliang)
+    - ![](../img/yes.png)[.NET反保护](ilfanbaohu)
+- ![](../img/github4.png)![](../img/yes.png)Android逆向
+  - ![](../img/yes.png)[apk的组成](apkzucheng)
+  - ![](../img/yes.png)[smali总体认识](smalizongti)
+  - ![](../img/yes.png)smali语法
+    - ![](../img/yes.png)[smali基本语法](smalijiben)
+    - ![](../img/yes.png)[smali指令]
