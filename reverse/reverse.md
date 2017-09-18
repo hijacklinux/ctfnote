@@ -28,7 +28,6 @@ layout: default
       - ![](../img/yes.png) [找断点](findbreakpoint)
       - ![](../img/yes.png) [OD调试过程中的一些注意事项](odtips)
     - ![](../img/yes.png)[IDA Pro的小小tips](idatips)
-
     - ![](../img/yes.png)破解需注意的
       - ![](../img/yes.png)[市面上的暗桩总结](anzhuang)
       - ![](../img/yes.png)[网络验证的破解思路](pojie)
@@ -54,4 +53,6 @@ layout: default
   - ![](../img/yes.png)[smali总体认识](smalizongti)
   - ![](../img/yes.png)smali语法
     - ![](../img/yes.png)[smali基本语法](smalijiben)
-    - ![](../img/yes.png)[smali指令]
+    - ![](../img/yes.png)[smali指令](smalizhiling)
+  - ![](../img/yes.png)[ARM汇编指令](armzhiling)
+  - ![](../img/yes.png)[ARM寻址方式](armxunzhi)
