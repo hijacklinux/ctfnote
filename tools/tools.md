@@ -10,6 +10,12 @@ layout: default
 >
 >很多经典工具我在其他板块已经说明(如OllyDbg,IDA Pro等)，这里就不列出了
 
+![](../img/github6.png)[MetaSploit](msf)
+
+![](../img/github7.png)[CobalStrike](cs)
+
+![](../img/github8.png)[BEEF](beef)
+
 ![](../img/github1.png)[git](git)
 
 ![](../img/github2.png)[screen](screen)
@@ -18,4 +24,4 @@ layout: default
 
 ![](../img/github4.png)[nmap](nmap)
 
-![](../img/github4.png)[hydra](hydra)
+![](../img/github5.png)[hydra](hydra)
