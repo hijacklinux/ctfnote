@@ -13,3 +13,6 @@ layout: default
   - ![](../img/yes.png)前端基础
     - ![](../img/yes.png)[url与HTML协议](url)
     - ![](../img/yes.png)[Cookie安全](cookie)
+    - ![](../img/yes.png)[本地存储风险+CSS+ActionScript](bendi)
+    - ![](../img/yes.png)[伪造ip+用户登录+验证码绕过+浏览器同源策略](tongyuan)
+- ![](../img/github3.png)![](../img/yes.png) [信息收集](xinxishouji)
