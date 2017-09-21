@@ -16,3 +16,17 @@ layout: default
     - ![](../img/yes.png)[本地存储风险+CSS+ActionScript](bendi)
     - ![](../img/yes.png)[伪造ip+用户登录+验证码绕过+浏览器同源策略](tongyuan)
 - ![](../img/github3.png)![](../img/yes.png) [信息收集](xinxishouji)
+- ![](../img/github4.png)![](../img/yes.png) sql注入
+  - ![](../img/yes.png)[漏洞挖掘](sqlwajue)
+  - ![](../img/yes.png)[寻找注入点](zhurudian)
+  - ![](../img/yes.png)[绕过方法](raoguofangfa)
+  - ![](../img/yes.png)[判断类型](panduanleixing)
+  - ![](../img/yes.png)[注入格式](zhurugeshi)
+  - ![](../img/yes.png)[cheat-sheet](sqlcheatsheet)
+  - ![](../img/yes.png)[万能密码](wannengmima)
+  - ![](../img/yes.png)[十种MySQL报错注入](baocuozhuru)
+  - ![](../img/yes.png)[其他数据库注入](qitashujuku)
+  - ![](../img/yes.png)[常用参数](changyongcanshu)
+- ![](../img/github5.png)![](../img/yes.png) XSS
+  - ![](../img/yes.png) XSS payload
+    - ![](../img/yes.png)[获取cookie+浏览器信息+插件](huoqucookie)
