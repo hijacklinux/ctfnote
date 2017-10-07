@@ -57,3 +57,11 @@ layout: default
     - ![](../img/yes.png) [绕过过滤的方法](xssraoguo)
     - ![](../img/yes.png) 动态调用远程JS
   - ![](../img/yes.png) [XSS模型](xssmoxing)
+- ![](../img/github6.png)![](../img/yes.png) [CSRF](csrf)
+- ![](../img/github7.png)![](../img/yes.png) [clickjacking](clickjacking)
+- ![](../img/github8.png)![](../img/yes.png) 代码审计
+  - ![](../img/yes.png) [通用思路](shenjitongyong)
+  - ![](../img/yes.png) [PHP核心配置](phphexinpeizhi)
+  - ![](../img/yes.png) [文件包含漏洞](wenjianbaohan)
+  - ![](../img/yes.png) [文件读取（下载）漏洞](wenjianduqu)
+  - ![](../img/yes.png) [文件上传漏洞](wenjianshangchuan)
