@@ -20,4 +20,4 @@ layout: default
 
 __原创文章，转载请注明转载自[http://www.8pwn.com](http://www.8pwn.com)__
 
-[返回上一层](./web)
+[返回上一层](./pwn)
