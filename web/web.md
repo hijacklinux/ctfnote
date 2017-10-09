@@ -65,3 +65,9 @@ layout: default
   - ![](../img/yes.png) [文件包含漏洞](wenjianbaohan)
   - ![](../img/yes.png) [文件读取（下载）漏洞](wenjianduqu)
   - ![](../img/yes.png) [文件上传漏洞](wenjianshangchuan)
+  - ![](../img/yes.png) [php中可以执行代码的函数](phpfunc)
+  - ![](../img/yes.png) [代码执行漏洞](daimazhixing)
+  - ![](../img/yes.png) [变量覆盖漏洞](bianliangfugai)
+- ![](../img/github9.png)![](../img/yes.png) myql数据库
+  - ![](../img/yes.png) [基础知识](sjkjichuzhishi)
+  - ![](../img/yes.png) [增删改查](zenshangaicha)
