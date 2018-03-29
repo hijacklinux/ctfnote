@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d0cb2e8bb3c3236c69b720e2d3498bc7";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  <meta charset="UTF-8">
+
+  <title>小贱云音乐下载</title>
+
+    <link rel="stylesheet" href="vipmusic_files/css/style.css" media="screen" type="text/css" />
+
+</head>
+<body>
+  <div class="panel"> 
+  <div class="wrap">
+    <input type="text" placeholder="请输入网易云音乐ID" id="musicid"/>
+	<button type='button' onclick="dl()">下载</button>
+<script>
+function dl(){
+var myFrame= document.createElement('iframe');
+myFrame.src = 'http://music.163.com/song/media/outer/url?id='+document.getElementById('musicid').value+'.mp3';
+myFrame.style.display = 'none';
+document.body.appendChild(myFrame);
+}
+</script>
+  </div>
+</div>
+<div style="text-align:center;clear:both">
+</div>
+
+</body>
+
+</html>
