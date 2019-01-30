@@ -242,7 +242,7 @@ render_gameover();
 			context.fillText("   第三个阻碍——拒绝。当然，换作是谁都会拒绝", 920, 270);	
 			context.fillText("的，好在最后我可以和你做朋友了。", 920, 285);	
 
-			context.fillText("   第四个的阻碍——我发现你好像不喜欢理我了。", 920, 315);	
+			context.fillText("   第四个阻碍——我发现你好像不喜欢理我了。", 920, 315);	
 			context.fillText("我有些失落，但我知道不能气馁。我开始不再给你", 920, 330);	
 			context.fillText("压力，尽可能以朋友的身份和你交流。", 920, 345);	
 
