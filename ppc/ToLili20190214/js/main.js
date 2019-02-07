@@ -642,7 +642,7 @@ render_gameover();
 	var score=0;//分数
 	var level=1;//关卡
 	var surplus=5;//剩余敌人数量
-	var life=1;//生命
+	var life=66;//生命
 	var invincible=false//无敌
 	var storage = window.localStorage;//"localStorage"HTML5存储数据
 	if(storage.length==0){
