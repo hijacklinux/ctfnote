@@ -224,7 +224,7 @@ render_gameover();
 			context.save();
 			context.fillStyle = "#000000";
 			var img = new Image();
-			img.src = "https://raw.githubusercontent.com/hijacklinux/ctfnote/master/ppc/ToLili20190214/qrcode.png"
+			img.src = "https://raw.githubusercontent.com/hijacklinux/ctfnote/master/ppc/ToLili20190214/qrcode.png";
 			img.onload=function(){context.drawImage(img,10,10};
 			
 			context.restore();
