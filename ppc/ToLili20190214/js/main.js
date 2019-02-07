@@ -32,7 +32,7 @@ function canvasApp() {
 			context.save();
 			context.fillStyle = "#FAEBD7";
 			context.font = "normal 25px normal"; 
-			context.fillText("游戏通过，获得查看权限→", 125, 200);
+			context.fillText("获得查看权限,用手机扫一下看看是什么→", 125, 200);
 			context.restore();
 			update();
 render_gameover();
