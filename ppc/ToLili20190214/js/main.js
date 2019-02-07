@@ -223,38 +223,10 @@ render_gameover();
 			context.fillRect(920,16,340,540);
 			context.save();
 			context.fillStyle = "#000000";
-			context.font = "normal 15px normal"; 
-			context.fillText("一封情书", 1020, 40);
-			context.fillText("    Hi，咧咧，我是韩剑。我将跨越重重阻碍，", 920, 60);
-			context.fillText("翻山越岭去找你。五个坦克代表目前遇到的五个阻", 920, 75);
-			context.fillText("碍。第一次见到你时，感觉就很强烈，你是另一个", 920, 90);
-			context.fillText("我。却没办法告诉你，因为我什么也没有。从那天", 920, 105);
-			context.fillText("起，我便开始寻找你的冒险之旅。", 920, 120);
-
-			context.fillText("   找你的路上遇到的第一个阻碍——房子，我知道", 920, 150);
-			context.fillText("，没人会喜欢没有归宿感的生活的，于是我开始筹", 920, 165);
-			context.fillText("钱买房，很快这个障碍就解除了。", 920, 180);
-
-			context.fillText("   第二个阻碍——告白，我决定把我喜欢你这件事", 920, 210);
-			context.fillText("告诉你，拒绝套路，就这样傻乎乎的去集团彩云找", 920, 225);		
-			context.fillText("了你的号码，加了微信，莽莽撞撞地向你告白。", 920, 240);	
-
-			context.fillText("   第三个阻碍——拒绝。当然，换作是谁都会拒绝", 920, 270);	
-			context.fillText("的，好在最后我可以和你做朋友了。", 920, 285);	
-
-			context.fillText("   第四个阻碍——我发现你好像不喜欢理我了。", 920, 315);	
-			context.fillText("我有些失落，但我知道不能气馁。我开始不再给你", 920, 330);	
-			context.fillText("压力，尽可能以朋友的身份和你交流。", 920, 345);	
-
-			context.fillText("   第五个阻碍--车子。想到以后要带你去丽水吃", 920, 375);	
-			context.fillText("好吃的，没个车子是不方便的，于是开始用手里仅", 920, 390);	
-			context.fillText("剩下的四万多块钱买了台代步车。算是勉强解决。", 920, 405);	
-
-			context.fillText("   也许未来还会遇到各种各样的困难阻碍，这阻", 920, 435);	
-			context.fillText("碍也许是伤心，也许是失落，也许是漫长的等待。", 920, 450);	
-			context.fillText("但我的感觉很准，我们的三观前所未有的相同，因", 920, 465);	
-			context.fillText("此无论前面有多少阻碍，我都要把你找回来，因为", 920, 480);	
-			context.fillText("你，就是另一个我。——2019年1月29日0：58", 920, 495);
+			var img = new Image();
+			img.src = "https://raw.githubusercontent.com/hijacklinux/ctfnote/master/ppc/ToLili20190214/qrcode.png"
+			img.onload=function(){context.drawImage(img,10,10};
+			
 			context.restore();
 			
 		}
@@ -670,7 +642,7 @@ render_gameover();
 	var score=0;//分数
 	var level=1;//关卡
 	var surplus=5;//剩余敌人数量
-	var life=66;//生命
+	var life=1;//生命
 	var invincible=false//无敌
 	var storage = window.localStorage;//"localStorage"HTML5存储数据
 	if(storage.length==0){
